@@ -83,10 +83,10 @@ section .animate {
 
 section.show-animate .animate {
     opacity: 1;
-    filter: blur(10px);
+    filter: blur(0);
 }
 
-.sec2 .show-animate .animate {
+.sec2.show-animate .animate {
     transform: translateX(0);
 }
 
@@ -94,16 +94,17 @@ section.show-animate .animate {
     transform: translateX(100%);
 }
 
-.sec3 .animate {
-    transform: scale(0.7);
-}
-
 .sec3.show-animate .animate {
     transform: scale(1);
 }
 
+.sec3 .animate {
+    transform: scale(0.7);
+}
+
 .sec4.show-animate .animate {
-    transform: scale(0deg);
+    transform: scale(0);
+    transform: rotate(0);
 }
 
 .sec4 .animate {
@@ -111,11 +112,11 @@ section.show-animate .animate {
 }
 
 .sec5.show-animate .animate {
-    transform: translate(0 rotate(0));
+    transform: translate(0) rotate(0deg);
 }
 
 .sec5 .animate {
-    transform: translate(100%) rotate(-90deg);
+    transform: translateX(100%) rotate(-90deg);
 }
 
 p.animate {
